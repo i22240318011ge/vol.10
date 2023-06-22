@@ -1,0 +1,130 @@
+@charset "utf-8";
+    /* 全体のスタイル */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* サイト全体の最大幅を設定 */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* ヘッダーエリア */
+    header {
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .logo {
+      /* ロゴのスタイル */
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #61D2F8;
+      margin-top: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav ul li {
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    .breadcrumbs {
+      /* パンくずリストのスタイル */
+      font-style: italic;
+    }
+
+    /* ビジュアルエリア */
+    .visual-area {
+      background-color: #eaeaea;
+      padding: 20px;
+    }
+
+    /* コンテンツエリア */
+    .content-area {
+      display: flex;
+      justify-content: center; /* コンテンツをセンター寄せにする */
+    }
+
+    main {
+      /* メインコンテンツのスタイル */
+      flex: 2;
+      background-color: #ffffff;
+      padding: 20px;
+    }
+
+    aside {
+      /* サイドバーのスタイル */
+      flex: 1;
+      background-color: #f8f8f8;
+      padding: 20px;
+    }
+
+    /* フッターエリア */
+    footer {
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .card{
+        display: flex;
+        width: 363px;
+        padding: 24px;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        border: 1px solid #000;
+    }
+
+    /* レスポンシブなスタイル */
+    @media screen and (max-width: 767px) {
+      header {
+        padding: 10px;
+      }
+
+      .logo {
+        font-size: 20px;
+      }
+
+      nav {
+        margin-top: 0;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+      }
+
+      nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      nav ul li a {
+        padding: 5px 10px;
+      }
+
+      .content-area {
+        flex-direction: column;
+      }
+
+      main, aside {
+        flex: none;
+      }
+    }
+ 
